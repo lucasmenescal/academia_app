@@ -1,0 +1,237 @@
+{
+    "Dias-da-Semana": {
+      "Segunda-feira": {
+        "DayofWeek": "Segunda-Feira",
+        "Musculo": "Pernas e Gluteos",
+        "Treino": [
+          {
+            "Exercicio": "Agachamento com garrafão de 5L",
+            "Repetições": "12-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Afundo com garrafão de 5L (cada perna)",
+            "Repetições": "12-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Salto com agachamento",
+            "Repetições": "10-12",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Elevação pélvica com garrafão de 20L",
+            "Repetições": "12-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Panturrilha em pé com garrafão de 20L",
+            "Repetições": "12-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          }
+        ]
+      },
+      "Terca-feira": {
+        "DayofWeek": "Terça-Feira",
+        "Musculo": "Peito e Tríceps",
+        "Treino": [
+          {
+            "Exercicio": "Flexão de braço",
+            "Repetições": "10-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Flexão de braço inclinada com os pés elevados",
+            "Repetições": "10-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Flexão de braço com mãos juntas (diamante)",
+            "Repetições": "8-12",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Tríceps francês com garrafão de 5L",
+            "Repetições": "10-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Tríceps testa com garrafão de 5L",
+            "Repetições": "10-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          }
+        ]
+      },
+      "Quarta-feira": {
+        "DayofWeek": "Quarta-Feira",
+        "Musculo": "Descanso e alongamento",
+        "Treino": [
+          {
+            "Exercicio": "Reserve esse dia para descansar e fazer Exercicios de alongamento para todo o corpo",
+            "Repetições": "",
+            "Séries": "",
+            "Descanso": "60 segundos"
+          }
+        ]
+      },
+      "Quinta-feira": {
+        "DayofWeek": "Quinta-Feira",
+        "Musculo": "Costas e Bíceps",
+        "Treino": [
+          {
+            "Exercicio": "Remada com garrafão de 5L",
+            "Repetições": "10-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Remada invertida com garrafão de 5L",
+            "Repetições": "10-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Pulldown com garrafão de 20L",
+            "Repetições": "10-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Rosca direta com garrafão de 5L",
+            "Repetições": "10-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Rosca martelo com garrafão de 5L",
+            "Repetições": "10-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          }
+        ]
+      },
+      "Sexta-feira": {
+        "DayofWeek": "Sexta-Feira",
+        "Musculo": "Ombros e Pernas",
+        "Treino": [
+          {
+            "Exercicio": "Elevação frontal com garrafão de 5L",
+            "Repetições": "10-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Elevação lateral com garrafão de 5L",
+            "Repetições": "10-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Elevação de ombros com garrafão de 5L",
+            "Repetições": "10-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Agachamento sumô com garrafão de 20L",
+            "Repetições": "12-15",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Avanço lateral com garrafão de 5L (cada perna)",
+            "Repetições": "10-12",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          }
+        ]
+      },
+      "Sabado": {
+        "DayofWeek": "Sábado",
+        "Musculo": "Abdômen",
+        "Treino": [
+          {
+            "Exercicio": "Prancha frontal",
+            "Repetições": "30-60 segundos",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Prancha lateral (cada lado)",
+            "Repetições": "30-60 segundos",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Abdominal tradicional",
+            "Repetições": "15-20",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          },
+          {
+            "Exercicio": "Abdominal reverso",
+            "Repetições": "15-20",
+            "Séries": 3,
+            "Descanso": "60 segundos"
+          }
+        ]
+      },
+      "Domingo": {
+        "DayofWeek": "Domingo",
+        "Musculo": "Descanso e alongamento",
+        "Treino": [
+          {
+            "Exercicio": "Reserve esse dia para descansar e fazer Exercicios de alongamento para todo o corpo",
+            "Repetições": "",
+            "Séries": "",
+            "Descanso": "60 segundos"
+          }
+        ]
+      },
+      "Exercicios-de-Alongamento": [
+        {
+          "Exercicio": "Alongamento de pernas (quadríceps, isquiotibiais, panturrilhas)",
+          "Tempo": "30 segundos"
+        },
+        {
+          "Exercicio": "Alongamento de peito (peitorais)",
+          "Tempo": "30 segundos"
+        },
+        {
+          "Exercicio": "Alongamento de ombros",
+          "Tempo": "30 segundos"
+        },
+        {
+          "Exercicio": "Alongamento de costas",
+          "Tempo": "30 segundos"
+        },
+        {
+          "Exercicio": "Alongamento de tríceps (cada braço)",
+          "Tempo": "30 segundos"
+        },
+        {
+          "Exercicio": "Alongamento de bíceps (cada braço)",
+          "Tempo": "30 segundos"
+        },
+        {
+          "Exercicio": "Alongamento de pescoço",
+          "Tempo": "30 segundos"
+        },
+        {
+          "Exercicio": "Alongamento de abdômen",
+          "Tempo": "30 segundos"
+        }
+      ]
+    }
+  }
+  

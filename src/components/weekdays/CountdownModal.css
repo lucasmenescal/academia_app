@@ -1,0 +1,54 @@
+/* CountdownModal.css */
+
+/* CountdownModal.css */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: none;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ReactModal__Overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+ }
+
+.ReactModal__Content {
+  color: #fff;
+  
+} 
+
+.ReactModal__Content h2 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.ReactModal__Content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.ReactModal__Content button:hover {
+  background-color: #0056b3;
+}
