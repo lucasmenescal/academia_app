@@ -1,6 +1,7 @@
 body {
   background: black;
   text-align: center;
+  align-items: center;
 }
 a {
   text-decoration: none;
@@ -8,13 +9,40 @@ a {
   font-size: 72px;
   color: white;
 }
-a:hover{
-    background-color: azure;
-    color: black;
-    margin: 5px;
-    padding: 5px;
+a:hover {
+  background-color: azure;
+  color: black;
+  margin: 5px;
+  padding: 5px;
 }
 
 h1 {
   font-size: 72px;
 }
+
+/* Estilos para telas com largura menor ou igual a 320px */
+@media screen and (max-width: 500px) {
+  ul {
+    padding: 0;
+    padding-top: 10px;
+  }
+  li {
+    padding: 5px;
+    margin: 5px;
+    background: #808080;
+    border-radius: 5px;
+  }
+  body {
+    align-items: center;
+    margin: 0;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  a {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+  }
+}
+

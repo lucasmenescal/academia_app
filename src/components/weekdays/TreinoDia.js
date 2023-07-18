@@ -3,6 +3,9 @@ import { useParams } from 'react-router-dom';
 
 import jsonData from './data/list.json';
 import CountdownModal from './CountdownModal';
+import AddExercicio from './AddExercicio';
+
+import { FiClock, FiPlus } from 'react-icons/fi';
 import './style.css';
 
 
@@ -12,14 +15,36 @@ const TreinoDia = () => {
   const [data, setData] = useState(null);
   
   const [modalOpen, setModalOpen] = useState(false);
+  const [modalAddExercicioOpen, setModalAddExercicioOpen] = useState(false);
+  const [exercicios, setExercicios] = useState([]);
 
   const { dia } = useParams();
+
+  const fecharModalAddExercicio = () => {
+    setModalAddExercicioOpen(false);
+  };
   
+  const abrirModalAddExercicio = () => {
+    setModalAddExercicioOpen(true);
+  };
+ 
   const abrirModal = () => {
     setModalOpen(true);
   };
 
- 
+  const adicionarExercicio = (novoExercicio) => {
+    setExercicios([...exercicios, novoExercicio]);
+
+    const newData = { ...data };
+    newData['Dias-da-Semana'][dia]['Treino'].push(novoExercicio);
+    setData(newData);
+
+    // Atualizar o arquivo JSON
+    // NOTA: Isso não atualiza o arquivo original, apenas a representação em memória do JSON
+    // Você precisará implementar a lógica para salvar o arquivo JSON no sistema de arquivos
+    const jsonContent = JSON.stringify(newData);
+    console.log('Arquivo JSON atualizado:', jsonContent);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,37 +61,15 @@ const TreinoDia = () => {
   if (!data) {
     return <div>Carregando...</div>;
   }
-  // const dataTeste = data["Dias-da-Semana"]
   let titulo = data["Dias-da-Semana"][dia]["DayofWeek"]
   let musculo = data["Dias-da-Semana"][dia]["Musculo"]
   let treino = data["Dias-da-Semana"][dia]["Treino"]
-  let alongamento = data["Dias-da-Semana"]["Exercicios-de-Alongamento"]
   return (
     <div>
       <h1>{titulo}</h1>
       <h2>{musculo}</h2>
-      <h2>Alongamento:</h2>
-      <table>
-      <thead>
-        <tr>
-          <th>Exercício</th>
-          <th>Tempo</th>
-          <th>Descanso</th>
-        </tr>
-      </thead>
-      <tbody>
-      {alongamento.map((exercicio, index) => (
-          <tr key={index}>
-            <td>{exercicio.Exercicio}</td>
-            <td>{exercicio["Tempo"]}</td>
-            <td>
-              <button onClick={abrirModal}>Play</button>
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
       <h2>Treino:</h2>
+      <button onClick={abrirModalAddExercicio}><FiPlus /></button>
     <table>
       <thead>
         <tr>
@@ -85,13 +88,14 @@ const TreinoDia = () => {
             <td>{exercicio["Séries"]}</td>
             <td>{exercicio.Descanso}</td>
             <td>
-              <button onClick={abrirModal}>Play</button>
+              <button onClick={abrirModal}><FiClock  /></button>
             </td>
           </tr>
         ))}
       </tbody>
     </table>
-    <CountdownModal isOpen={modalOpen} onRequestClose={() => setModalOpen(false)} countdown={60} />
+    <CountdownModal isOpen={modalOpen} onRequestClose={() => setModalOpen(false)} />
+    <AddExercicio isOpen={modalAddExercicioOpen} onClose={fecharModalAddExercicio} onSave={adicionarExercicio} />
     </div>
   );
 };
