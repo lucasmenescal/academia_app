@@ -13,12 +13,10 @@ const TreinoDia = () => {
   
   const [modalOpen, setModalOpen] = useState(false);
 
-  const [contador, setContador] = useState(0);
   const { dia } = useParams();
   
   const abrirModal = () => {
     setModalOpen(true);
-    setContador(60); // Defina o valor inicial do contador aqui
   };
 
  
@@ -42,7 +40,7 @@ const TreinoDia = () => {
   let titulo = data["Dias-da-Semana"][dia]["DayofWeek"]
   let musculo = data["Dias-da-Semana"][dia]["Musculo"]
   let treino = data["Dias-da-Semana"][dia]["Treino"]
-  // let alongamento = data["Exercicios-de-Alongamento"]
+  let alongamento = data["Dias-da-Semana"]["Exercicios-de-Alongamento"]
   return (
     <div>
       <h1>{titulo}</h1>
@@ -53,13 +51,17 @@ const TreinoDia = () => {
         <tr>
           <th>Exercício</th>
           <th>Tempo</th>
+          <th>Descanso</th>
         </tr>
       </thead>
       <tbody>
-      {treino.map((exercicio, index) => (
+      {alongamento.map((exercicio, index) => (
           <tr key={index}>
             <td>{exercicio.Exercicio}</td>
-            <td>{exercicio["Repetições"]}</td>
+            <td>{exercicio["Tempo"]}</td>
+            <td>
+              <button onClick={abrirModal}>Play</button>
+            </td>
           </tr>
         ))}
       </tbody>
@@ -89,7 +91,7 @@ const TreinoDia = () => {
         ))}
       </tbody>
     </table>
-    <CountdownModal isOpen={modalOpen} onRequestClose={() => setModalOpen(false)} countdown={contador} />
+    <CountdownModal isOpen={modalOpen} onRequestClose={() => setModalOpen(false)} countdown={60} />
     </div>
   );
 };

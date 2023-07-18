@@ -1,26 +1,48 @@
 /* style.css */
 
-h1 {
+h1,
+h2 {
   font-size: 24px;
-  margin-bottom: 16px;
+  color: #f2f2f2;
+  margin: 20px;
+  text-align: center;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
+  /* margin: 20px; */
+  font-size: 20px;
 }
 
-table th,
+table th {
+  padding: 8px;
+  border: 1px solid black;
+  color: black;
+  background-color: #f2f2f2;
+  font-weight: bold;
+
+}
+
 table td {
   padding: 8px;
   border: 1px solid #ddd;
 }
 
-table th {
+table tr {
+  align-items: center;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  color: #f2f2f2;
+
+}
+
+table tr:hover {
   background-color: #f2f2f2;
-  font-weight: bold;
-  text-align: left;
+  color: black;
+  border: 1px solid black;
 }
 
 table td button {
