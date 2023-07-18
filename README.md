@@ -1,6 +1,7 @@
 # Aplicativo de Academia
 
 Este é um aplicativo de academia que permite visualizar treinos diários e adicionar novos exercícios ao programa de treinamento.
+Desenvolvido por Lucas Menescal.
 
 ## Funcionalidades
 
