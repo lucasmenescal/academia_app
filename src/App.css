@@ -1,0 +1,20 @@
+body {
+  background: black;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  align-items: center;
+  font-size: 72px;
+  color: white;
+}
+a:hover{
+    background-color: azure;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+}
+
+h1 {
+  font-size: 72px;
+}
